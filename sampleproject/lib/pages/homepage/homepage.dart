@@ -20,8 +20,8 @@ class _MyhomepageState extends State<Myhomepage> {
               decoration: BoxDecoration(
                 image: DecorationImage(
                   fit: BoxFit.cover,
-                  image: NetworkImage(
-                    'https://images.unsplash.com/photo-1453791052107-5c843da62d97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+                  image: AssetImage(
+                    'assets/images/okkk.png',
                   ),
                 ),
               ),
@@ -91,6 +91,7 @@ class _MyhomepageState extends State<Myhomepage> {
                         fontSize: 10.0,
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
+
                         
                       ),
                       
