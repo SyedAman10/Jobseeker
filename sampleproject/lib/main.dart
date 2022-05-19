@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sampleproject/pages/homepage/homepage.dart';
-import 'package:sms_autofill/sms_autofill.dart';
-
-import './pages/otp_screen/otp_screen.dart';
+import 'package:sampleproject/pages/signup/signup.dart';
 
 void main() => runApp(myApp());
 
@@ -12,31 +10,30 @@ class myApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Auth(),
+      home: signupPage(),
       debugShowCheckedModeBanner: false,
-      title: 'Sign Up',
       theme: ThemeData(
-        primaryColor: Colors.white,
+        fontFamily: 'Poppins',
       ),
     );
   }
 }
 
-class Auth extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: ElevatedButton(
-          child: Text('Login/Register'),
-          onPressed: () async {
-            //http here
-            final signcode = await SmsAutoFill().getAppSignature;
-            print(signcode);
-            Navigator.push(context, MaterialPageRoute(builder: (c) => Otp()));
-          },
-        ),
-      ),
-    );
-  }
-}
+// class Auth extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       body: Center(
+//         child: ElevatedButton(
+//           child: Text('Login/Register'),
+//           onPressed: () async {
+//             //http here
+//             final signcode = await SmsAutoFill().getAppSignature;
+//             print(signcode);
+//             Navigator.push(context, MaterialPageRoute(builder: (c) => Otp()));
+//           },
+//         ),
+//       ),
+//     );
+//   }
+// }
