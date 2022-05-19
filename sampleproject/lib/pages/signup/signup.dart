@@ -70,7 +70,7 @@ class _signupPageState extends State<signupPage> {
                      labelText: 'First Name',
                      
                      
-      
+        
                    ),
                    
                  ),
@@ -88,7 +88,7 @@ class _signupPageState extends State<signupPage> {
                      labelText: 'Last Name',
                      
                      
-      
+        
                    ),
                    
                  ),
@@ -107,7 +107,7 @@ class _signupPageState extends State<signupPage> {
                      labelText: 'E-mail',
                      
                      
-      
+        
                    ),
                    
                  ),
@@ -126,7 +126,7 @@ class _signupPageState extends State<signupPage> {
                      labelText: 'Password',
                      
                      
-      
+        
                    ),
                    
                  ),
@@ -146,7 +146,7 @@ class _signupPageState extends State<signupPage> {
                      labelText: 'Mobile Number ',
                      
                      
-      
+        
                    ),
                    
                  ),
@@ -157,11 +157,11 @@ class _signupPageState extends State<signupPage> {
                padding: const EdgeInsets.fromLTRB(80, 10, 80, 10),
                child: Text('Continue', style: TextStyle(fontFamily: 'Poppins', fontSize: 20, fontWeight: FontWeight.bold),),
              ), style: ButtonStyle(shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-    RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(18.0),
-      
-    )
-  ),
+          RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(18.0),
+        
+          )
+          ),
                backgroundColor: MaterialStateProperty.all(Color.fromRGBO(35, 205, 176, 1),)
              ,),
              ),
@@ -182,8 +182,8 @@ class _signupPageState extends State<signupPage> {
       ),
       
     
-
-
+    
+    
         
     
       
