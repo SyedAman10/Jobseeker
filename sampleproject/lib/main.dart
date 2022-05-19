@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sampleproject/pages/client_signup/clientsignup.dart';
 import 'package:sampleproject/pages/homepage/homepage.dart';
 import 'package:sampleproject/pages/signup/signup.dart';
 
@@ -11,7 +12,7 @@ class myApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
 
-      home: signupPage(),
+      home: clientSignup(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: 'Poppins',),
       
