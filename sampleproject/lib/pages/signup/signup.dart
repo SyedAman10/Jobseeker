@@ -11,6 +11,7 @@ class _signupPageState extends State<signupPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       
       appBar: AppBar(
         centerTitle:  true,
@@ -26,7 +27,7 @@ class _signupPageState extends State<signupPage> {
     
     leading: Icon(Icons.arrow_back_ios_outlined),
     
-    bottom: PreferredSize( preferredSize: Size.fromHeight(75), child: SizedBox(), ),
+    bottom: PreferredSize( preferredSize: Size.fromHeight(55), child: SizedBox(), ),
      flexibleSpace: Container(
           
            decoration: BoxDecoration(gradient: LinearGradient(begin: Alignment.bottomLeft,
@@ -152,15 +153,28 @@ class _signupPageState extends State<signupPage> {
                ),
              ),
              SizedBox(height: 20,),
-            RaisedButton(
-                child: Text('Continue', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 15),),
-                onPressed: () {},
-                padding: EdgeInsets.fromLTRB(80, 20, 80, 20),
-                color: Color.fromARGB(255, 138, 192, 106),
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20)),
-              ),
-          SizedBox(height: 20,),
+             ElevatedButton(onPressed: (){}, child: Padding(
+               padding: const EdgeInsets.fromLTRB(80, 10, 80, 10),
+               child: Text('Continue', style: TextStyle(fontFamily: 'Poppins', fontSize: 20, fontWeight: FontWeight.bold),),
+             ), style: ButtonStyle(shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+    RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(18.0),
+      
+    )
+  ),
+               backgroundColor: MaterialStateProperty.all(Color.fromRGBO(35, 205, 176, 1),)
+             ,),
+             ),
+             SizedBox(height: 20,),
+            // RaisedButton(
+            //     child: Text('Continue', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 15),),
+            //     onPressed: () {},
+            //     padding: EdgeInsets.fromLTRB(80, 20, 80, 20),
+            //     color: Color.fromRGBO(35, 205, 176, 1),
+            //     shape: RoundedRectangleBorder(
+            //         borderRadius: BorderRadius.circular(20)),
+            //   ),
+          // SizedBox(height: 20,),
               
             ],
           ),
