@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
 import 'package:sampleproject/pages/homepage/homepage.dart';
 import 'package:sampleproject/pages/signup/signup.dart';
 
@@ -9,11 +11,12 @@ class myApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       home: signupPage(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         fontFamily: 'Poppins',
+        primarySwatch: Colors.teal,
       ),
     );
   }

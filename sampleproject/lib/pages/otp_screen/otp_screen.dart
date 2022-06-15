@@ -32,30 +32,47 @@ class _OtpState extends State<Otp> {
         ),
       ),
       body: Center(
-        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: <
-            Widget>[
-          Container(
-            padding: EdgeInsets.symmetric(horizontal: 50, vertical: 10),
-            child: PinFieldAutoFill(
-              codeLength: 4,
-              onCodeChanged: (val) {
-                print(val);
-              },
-            ),
-          ),
-          SizedBox(height: 40),
-          new ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (c) => CreateProfile()));
-            },
-            child: Text('Next'),
-            style: ButtonStyle(
-              backgroundColor:
-                  MaterialStateProperty.all(Color.fromRGBO(35, 205, 176, 1.0)),
-            ),
-          )
-        ]),
+        child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Container(
+                padding: EdgeInsets.symmetric(horizontal: 50, vertical: 10),
+                child: PinFieldAutoFill(
+                  codeLength: 4,
+                  onCodeChanged: (val) {
+                    print(val);
+                  },
+                ),
+              ),
+              SizedBox(height: 40),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: ((context) => CreateProfile())));
+                },
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(70, 10, 70, 10),
+                  child: Text(
+                    'Next',
+                    style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontSize: 16,
+                        fontWeight: FontWeight.w700),
+                  ),
+                ),
+                style: ButtonStyle(
+                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(18.0),
+                  )),
+                  backgroundColor: MaterialStateProperty.all(
+                    Color.fromRGBO(35, 205, 176, 1),
+                  ),
+                ),
+              ),
+            ]),
       ),
     );
   }

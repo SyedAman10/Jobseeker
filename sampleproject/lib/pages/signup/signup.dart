@@ -163,7 +163,7 @@ class _signupPageState extends State<signupPage> {
                       MaterialPageRoute(builder: ((context) => Otp())));
                 },
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(80, 10, 80, 10),
+                  padding: const EdgeInsets.fromLTRB(70, 10, 70, 10),
                   child: Text(
                     'Continue',
                     style: TextStyle(
